@@ -4,13 +4,13 @@
     "slug": "agent-router",
     "name": "Agent Router",
     "url": "https://agentrouter.org/register?aff=sW9d",
-    "category": "Other",
-    "freeQuota": "",
+    "category": "纯公益",
+    "freeQuota": "173刀",
     "freeQuotaValue": 175,
     "signIn": true,
     "recharge": false,
     "chargeEntry": "无充值纯公益",
-    "inviteCode": "",
+    "inviteCode": "122",
     "authorRecommendation": "强烈推荐",
     "requiresVpn": true,
     "purePublic": true,
@@ -19,14 +19,16 @@
     "stability": 90,
     "status": "活动中",
     "updatedAt": "2026-08-20",
-    "tags": [],
-    "availableModels": [
-      "gpt5.6sol",
-      "claude opus5",
-      "claude opus4.8"
+    "tags": [
+      "好好学力"
     ],
+    "availableModels": "gpt5.6sol\nclaude opus5\nclaude opus4.8",
     "typeIds": [
-      1
+      1,
+      2,
+      3,
+      7,
+      9
     ],
     "types": [
       {
@@ -34,182 +36,118 @@
         "name": "纯公益",
         "slug": "pure-public",
         "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
       }
     ],
     "description": "注册就送175刀+每天签到25刀",
     "isPublished": true,
-    "lastCheckedAt": "2026-08-16",
-    "reviewNote": null
+    "lastCheckedAt": "2026-08-13",
+    "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.8 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
   },
   {
-    "id": "hubway",
-    "slug": "hubway",
-    "name": "Hubway",
-    "url": "https://hubway.org/",
-    "category": "Chat API",
-    "freeQuota": "注册进群可领 10 美元额度",
-    "freeQuotaValue": 10,
+    "id": "亲测可以",
+    "slug": "亲测可以",
+    "name": "GoRouter",
+    "url": "https://gorouter.app/sign-up?aff=RL72",
+    "category": "亲测可用",
+    "freeQuota": "注册给100刀左右 每天签到10刀",
+    "freeQuotaValue": 100,
     "signIn": true,
-    "recharge": true,
-    "chargeEntry": "站内充值入口",
-    "inviteCode": "",
-    "authorRecommendation": "情况不明",
-    "requiresVpn": false,
-    "purePublic": false,
-    "sortOrder": 0,
-    "heat": 96,
-    "stability": 92,
-    "status": "稳定可用",
+    "recharge": false,
+    "chargeEntry": "",
+    "inviteCode": "亲测可用  注册给100刀左右  只能用克劳德的模型 opus5 opus5thinking opus4.8等  在个人资料中可签到 签到大约每天10刀    最近开放github注册，注册送50$,带邀请码再+20$,一共70$。",
+    "authorRecommendation": "推荐",
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 99,
+    "heat": 90,
+    "stability": 90,
+    "status": "可使用",
     "updatedAt": "2026-08-20",
-    "tags": [
-      "OpenAI",
-      "Claude",
-      "签到",
-      "充值"
+    "tags": [],
+    "availableModels": "",
+    "typeIds": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      9
     ],
-    "availableModels": [],
-    "typeIds": [],
     "types": [
       {
-        "id": null,
-        "name": null,
-        "slug": null,
-        "color": null
-      }
-    ],
-    "description": "适合日常对话、代码辅助和轻量测试，额度规则以站内最新公告为准。",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-17",
-    "reviewNote": null
-  },
-  {
-    "id": "aihub",
-    "slug": "aihub",
-    "name": "AIHub",
-    "url": "https://aihubmix.com/",
-    "category": "聚合 API",
-    "freeQuota": "进群赠送 10 美元，好评活动另有赠额",
-    "freeQuotaValue": 10,
-    "signIn": false,
-    "recharge": true,
-    "chargeEntry": "站内充值入口",
-    "inviteCode": "",
-    "authorRecommendation": "情况不明",
-    "requiresVpn": false,
-    "purePublic": false,
-    "sortOrder": 0,
-    "heat": 91,
-    "stability": 88,
-    "status": "活动中",
-    "updatedAt": "2026-08-20",
-    "tags": [
-      "多模型",
-      "活动额度",
-      "充值"
-    ],
-    "availableModels": [],
-    "typeIds": [],
-    "types": [
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
       {
-        "id": null,
-        "name": null,
-        "slug": null,
-        "color": null
-      }
-    ],
-    "description": "多模型聚合入口，适合对比模型表现和备用通道。",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-16",
-    "reviewNote": null
-  },
-  {
-    "id": "truesota",
-    "slug": "truesota",
-    "name": "True SOTA",
-    "url": "https://api.truesota.cn/",
-    "category": "模型 API",
-    "freeQuota": "注册赠送 20 美元额度",
-    "freeQuotaValue": 20,
-    "signIn": false,
-    "recharge": true,
-    "chargeEntry": "站内充值入口",
-    "inviteCode": "",
-    "authorRecommendation": "情况不明",
-    "requiresVpn": false,
-    "purePublic": false,
-    "sortOrder": 0,
-    "heat": 87,
-    "stability": 84,
-    "status": "可测试",
-    "updatedAt": "2026-08-20",
-    "tags": [
-      "注册送额",
-      "OpenAI",
-      "备用"
-    ],
-    "availableModels": [],
-    "typeIds": [],
-    "types": [
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
       {
-        "id": null,
-        "name": null,
-        "slug": null,
-        "color": null
-      }
-    ],
-    "description": "注册送额较高，适合新用户试用和 API 连通性测试。",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-14",
-    "reviewNote": null
-  },
-  {
-    "id": "nebula-relay",
-    "slug": "nebula-relay",
-    "name": "Nebula Relay",
-    "url": "https://example.com/nebula",
-    "category": "中转 API",
-    "freeQuota": "邀请活动最高 50 美元",
-    "freeQuotaValue": 50,
-    "signIn": true,
-    "recharge": true,
-    "chargeEntry": "邀请页与充值页",
-    "inviteCode": "",
-    "authorRecommendation": "情况不明",
-    "requiresVpn": false,
-    "purePublic": false,
-    "sortOrder": 0,
-    "heat": 82,
-    "stability": 73,
-    "status": "需复核",
-    "updatedAt": "2026-08-20",
-    "tags": [
-      "邀请奖励",
-      "中转",
-      "签到"
-    ],
-    "availableModels": [],
-    "typeIds": [],
-    "types": [
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
       {
-        "id": null,
-        "name": null,
-        "slug": null,
-        "color": null
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
       }
     ],
-    "description": "示例占位数据，用于展示高额度但需要复核的 API 站点。",
+    "description": "",
     "isPublished": true,
-    "lastCheckedAt": "2026-08-10",
-    "reviewNote": null
+    "lastCheckedAt": "2026-08-18",
+    "reviewNote": "亲测可用  注册给100刀左右  只能用克劳德的模型 opus5 opus5thinking opus4.8等  在个人资料中可签到 签到大约每天10刀    最近开放github注册，注册送50$,带邀请码再+20$,一共70$。"
   },
   {
-    "id": "aurora-lab",
-    "slug": "aurora-lab",
-    "name": "Aurora Lab",
-    "url": "https://example.com/aurora",
-    "category": "图像 API",
-    "freeQuota": "每日 30 次轻量调用",
-    "freeQuotaValue": 30,
+    "id": "clear-token",
+    "slug": "clear-token",
+    "name": "Clear Token",
+    "url": "https://example.com/clear-token",
+    "category": "轻量工具",
+    "freeQuota": "注册送 5 美元，每周可领补贴包",
+    "freeQuotaValue": 5,
     "signIn": true,
     "recharge": false,
     "chargeEntry": "暂未发现",
@@ -218,16 +156,16 @@
     "requiresVpn": false,
     "purePublic": false,
     "sortOrder": 0,
-    "heat": 76,
-    "stability": 79,
-    "status": "观察中",
+    "heat": 68,
+    "stability": 81,
+    "status": "新收录",
     "updatedAt": "2026-08-20",
     "tags": [
-      "生图",
-      "每日额度",
-      "签到"
+      "轻量",
+      "周补贴",
+      "无需充值"
     ],
-    "availableModels": [],
+    "availableModels": "",
     "typeIds": [],
     "types": [
       {
@@ -237,9 +175,9 @@
         "color": null
       }
     ],
-    "description": "示例占位数据，用于展示生图类 API 的卡片状态和筛选效果。",
+    "description": "示例占位数据，用于展示不带充值入口的公益类站点。",
     "isPublished": true,
-    "lastCheckedAt": "2026-08-12",
+    "lastCheckedAt": "2026-08-09",
     "reviewNote": null
   }
 ]
