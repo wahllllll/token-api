@@ -1211,3 +1211,59 @@ body.theme-minimal .shell {
   .theme-minimal .layout { grid-template-columns:minmax(0,1fr) 310px !important; padding-left:20px !important; padding-right:20px !important; gap:12px !important; }
   .theme-minimal .api-card { grid-template-columns:minmax(145px,1fr) minmax(145px,1fr) minmax(150px,1.2fr) 118px minmax(190px,1.15fr) 160px !important; gap:8px !important; }
 }
+
+/* Mobile-first public rows: identity and the primary action stay visible. */
+@media (max-width:760px) {
+  body.theme-minimal { overflow-x:hidden; }
+  body.theme-minimal .shell { width:100%; }
+  body.theme-minimal .site-header { position:static; display:flex; flex-direction:column; align-items:stretch; gap:12px; padding:12px 14px; }
+  body.theme-minimal .brand { min-width:0; }
+  body.theme-minimal .brand h1 { font-size:16px; }
+  body.theme-minimal .brand p { font-size:11px; }
+  body.theme-minimal .nav-links { width:100%; display:flex; flex-wrap:nowrap; justify-content:flex-start; gap:6px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none; }
+  body.theme-minimal .nav-links::-webkit-scrollbar { display:none; }
+  body.theme-minimal .nav-links a, body.theme-minimal .nav-links button { flex:0 0 auto; min-height:34px; padding:0 11px; font-size:12px; }
+  body.theme-minimal .layout { display:flex !important; flex-direction:column; gap:14px; width:100% !important; max-width:none !important; padding:14px 12px 40px !important; }
+  body.theme-minimal .main-panel { order:1; width:100%; }
+  body.theme-minimal .side-panel { order:2; display:flex !important; flex-direction:column; gap:10px; width:100%; margin-top:0; }
+  body.theme-minimal .compact-intro { min-height:0; padding:20px 18px; }
+  body.theme-minimal .compact-intro h2 { font-size:32px; line-height:1.1; }
+  body.theme-minimal .compact-intro p { font-size:13px; }
+  body.theme-minimal .toolbar { grid-template-columns:minmax(0,1fr) 112px; gap:6px; }
+  body.theme-minimal .search-box input, body.theme-minimal .sort-box select { min-height:40px; font-size:13px; }
+  body.theme-minimal .filters { display:flex; flex-wrap:nowrap; overflow-x:auto; gap:6px; padding:2px 0 5px; scrollbar-width:none; }
+  body.theme-minimal .filters::-webkit-scrollbar { display:none; }
+  body.theme-minimal .filters button { flex:0 0 auto; min-height:32px; padding:0 10px; font-size:12px; }
+  body.theme-minimal .result-line { gap:8px; font-size:11px; }
+  body.theme-minimal .result-line span:last-child { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  body.theme-minimal .cards-grid { display:flex; flex-direction:column; gap:9px; width:100%; overflow:visible; }
+  body.theme-minimal .api-card { display:grid !important; grid-template-columns:minmax(0,1fr) auto !important; grid-template-areas:"name action" "types action" "desc desc" "models models" "facts facts" "status status" !important; align-items:center; width:100%; min-width:0; min-height:0; height:auto !important; padding:14px !important; gap:9px 10px !important; border-radius:16px; overflow:hidden !important; }
+  body.theme-minimal .api-card > .row-name { grid-area:name !important; min-width:0; align-self:center !important; }
+  body.theme-minimal .name-line { min-width:0; gap:4px; }
+  body.theme-minimal .name-line h2 { font-size:17px; }
+  body.theme-minimal .rec-icon { flex-basis:27px; width:27px; height:29px; }
+  body.theme-minimal .rec-mark { width:27px; height:27px; }
+  body.theme-minimal .row-name .category { flex-basis:52px; max-width:52px; padding:3px 5px; font-size:11px; }
+  body.theme-minimal .api-card > .row-types { grid-area:types !important; min-width:0; max-width:100%; overflow-x:auto; scrollbar-width:none; }
+  body.theme-minimal .api-card > .row-types::-webkit-scrollbar { display:none; }
+  body.theme-minimal .row-types span { flex:0 0 auto; max-width:78px; }
+  body.theme-minimal .api-card > .row-description { grid-area:desc !important; min-width:0; }
+  body.theme-minimal .row-description span { min-width:0; display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  body.theme-minimal .api-card > .row-models { grid-area:models !important; min-width:0; }
+  body.theme-minimal .model-query { max-width:100%; min-height:32px; }
+  body.theme-minimal .api-card > .facts { grid-area:facts !important; display:flex !important; width:100%; min-width:0; overflow-x:auto; gap:6px; padding-bottom:2px; scrollbar-width:none; }
+  body.theme-minimal .api-card > .facts::-webkit-scrollbar { display:none; }
+  body.theme-minimal .facts > div { flex:0 0 76px; min-height:48px; padding:6px 7px; }
+  body.theme-minimal .facts dt { font-size:10px; }
+  body.theme-minimal .facts dd { font-size:12px; }
+  body.theme-minimal .api-card > .row-status { grid-area:status !important; position:static !important; display:flex; min-width:0; opacity:1 !important; pointer-events:auto; transform:none !important; }
+  body.theme-minimal .row-status .status, body.theme-minimal .row-status .vpn-note, body.theme-minimal .row-status .public-note { white-space:nowrap; }
+  body.theme-minimal .api-card > .card-actions { grid-area:action !important; display:flex !important; align-self:center !important; align-items:flex-end; min-width:94px; margin:0; padding:0; }
+  body.theme-minimal .card-actions .updated { display:none; }
+  body.theme-minimal .open-link { min-height:38px; padding:0 10px; font-size:12px; }
+  body.theme-minimal .side-panel .side-section { width:100%; }
+  body.theme-minimal .side-panel .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  body.theme-minimal .side-panel .compact-updates { max-height:none; }
+  body.theme-minimal .guide-layout { grid-template-columns:1fr; }
+  body.theme-minimal .guide-note { min-height:0; }
+}
