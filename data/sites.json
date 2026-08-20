@@ -1,5 +1,41 @@
 [
   {
+    "id": "agent-router",
+    "slug": "agent-router",
+    "name": "Agent Router",
+    "url": "https://agentrouter.org/register?aff=sW9d",
+    "category": "Other",
+    "freeQuota": "注册就送175刀+每天签到25刀",
+    "freeQuotaValue": 175,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无充值纯公益",
+    "inviteCode": "",
+    "authorRecommendation": "情况不明",
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 100,
+    "heat": 100,
+    "stability": 90,
+    "status": "观察中",
+    "updatedAt": "2026-08-20",
+    "tags": [],
+    "availableModels": [],
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "12",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-17",
+    "reviewNote": "2"
+  },
+  {
     "id": "hubway",
     "slug": "hubway",
     "name": "Hubway",
