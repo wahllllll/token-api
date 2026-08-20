@@ -4,91 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>公益 API 导航</title>
-    <meta name="description" content="公益 API 站点收录，集中查看免费额度、签到、充值入口、热度、稳定性和复核时间。">
+    <meta name="description" content="公益 API 站点导航，查看额度、状态、可用模型和作者推荐。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-minimal" data-config="./config/public.config.json" data-data="./data/sites.json">
     <div class="shell">
       <header class="site-header">
-        <div class="brand">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 7h14"></path>
-              <path d="M5 12h14"></path>
-              <path d="M5 17h10"></path>
-            </svg>
-          </span>
-          <div>
-            <h1>公益 API 导航</h1>
-            <p>持续更新，可用优先，信息从简</p>
-          </div>
-        </div>
-        <nav class="nav-links" aria-label="站点导航">
-          <a href="#sites" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>站点列表</span></a>
-          <a href="#disclaimer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 7.7 7.5 9.5 4.4-1.8 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="M12 8v5M12 17h.01"/></svg><span>免责声明</span></a>
-          <button type="button" class="nav-action" data-community><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM19 8v6M22 11h-6"/></svg><span>共同维护</span></button>
-        </nav>
+        <div class="brand"><span class="brand-mark" aria-hidden="true">✦</span><div><h1>公益 API 导航</h1><p>批量整理 · 公开查询 · 安全使用</p></div></div>
+        <nav class="nav-links" aria-label="站点导航"><a href="#sites" aria-current="page">站点列表</a><a href="#data">统计</a><a href="#disclaimer">免责声明</a><button type="button" class="nav-action" data-community>共同维护</button></nav>
       </header>
       <main class="layout">
         <section class="main-panel" id="sites">
-          <div class="intro">
-            <div class="intro-copy">
-              <div>
-                <p class="eyebrow">持续更新 · 公益整理</p>
-                <h2>公益 API 导航</h2>
-                <p>收录的站都可以编程、龙虾、酒馆。使用请保护个人隐私和数据安全，本站不对任何收录的中转站负责。</p>
-              </div>
-            </div>
-          </div>
-          <div class="toolbar">
-            <label class="search-box">
-              <input data-search type="search" placeholder="搜索站点、额度、签到、标签">
-            </label>
-            <label class="sort-box">
-              <select data-sort aria-label="排序">
-                <option value="heat">按热度排序</option>
-                <option value="updated">按更新时间</option>
-                <option value="quota">按额度排序</option>
-                <option value="stability">按稳定性</option>
-              </select>
-            </label>
-          </div>
+          <div class="intro-copy compact-intro"><p class="eyebrow">持续更新 · 公益整理</p><h2>公益 API 导航</h2><p>收录的站都可以编程、龙虾、酒馆。使用请保护个人隐私和数据安全，本站不对任何收录的中转站负责。</p></div>
+          <div class="toolbar"><label class="search-box"><input data-search type="search" placeholder="搜索站点、额度、模型、标签"></label><label class="sort-box"><select data-sort aria-label="排序"><option value="heat">按热度排序</option><option value="updated">按更新时间</option><option value="quota">按额度排序</option><option value="stability">按稳定性</option></select></label></div>
           <div class="filters" aria-label="筛选" data-filters></div>
-          <div class="result-line">
-            <span data-count>0 个结果</span>
-            <span>点击“打开站点”将跳转到第三方页面</span>
-          </div>
-          <div class="cards-grid" data-grid></div>
-          <p class="empty" data-empty hidden>没有匹配结果，换个关键词或筛选条件。</p>
+          <div class="result-line"><span data-count>0 个结果</span><span>查看详情后，点击“打开站点”访问第三方页面</span></div>
+          <div class="cards-grid" data-grid></div><p class="empty" data-empty hidden>没有匹配结果，换个关键词或筛选条件。</p>
         </section>
-        <aside class="side-panel">
-          <section class="side-section" id="data">
-            <h2>统计</h2>
-            <div class="metrics" data-metrics></div>
-          </section>
-          <section class="side-section" id="disclaimer">
-            <h2>免责声明</h2>
-            <ul class="notes">
-              <li>本站仅做公益 API 信息整理，不提供、代理或销售第三方服务。</li>
-              <li>额度、签到、充值入口和可用性以目标站公告为准，本站不作保证。</li>
-              <li>请自行判断服务风险，勿提交敏感信息；发现异常应立即停止使用。</li>
-              <li>详情、失效反馈和收录建议，请私信公众号。</li>
-            </ul>
-          </section>
-          <section class="side-section compact-updates">
-            <h2>最近更新</h2>
-            <div class="ticker" data-ticker></div>
-          </section>
-        </aside>
+        <aside class="side-panel"><section class="side-section" id="data"><h2>统计入口</h2><div class="metrics" data-metrics></div></section><section class="side-section" id="disclaimer"><h2>使用提醒</h2><ul class="notes"><li>额度、活动和可用性以目标站公告为准。</li><li>需要科学上网的站点会显示提示。</li><li>请勿提交敏感信息，详情和投稿请私信公众号。</li></ul></section><section class="side-section compact-updates"><h2>最近更新</h2><div class="ticker" data-ticker></div></section></aside>
       </main>
     </div>
-    <dialog class="contact-dialog" data-contact-dialog>
-      <button type="button" class="dialog-close" data-contact-close aria-label="关闭">×</button>
-      <p class="eyebrow">COMMUNITY MAINTENANCE</p>
-      <h2>共同维护公益导航</h2>
-      <p>如果你发现新的公益 API、失效链接或需要补充详情，请私信公众号，并附上站点名称、链接和你的邀请码。</p>
-      <div class="qr-placeholder"><span>公众号二维码</span><small>扫码后私信提交站点、邀请码和失效反馈</small></div>
-    </dialog>
+    <dialog class="contact-dialog" data-contact-dialog><button type="button" class="dialog-close" data-contact-close aria-label="关闭">×</button><p class="eyebrow">COMMUNITY MAINTENANCE</p><h2>共同维护公益导航</h2><p>欢迎投稿公益站点、反馈失效链接或补充详情，请私信公众号。</p><div class="qr-placeholder"><span>公众号二维码</span><small>扫码后随时滴滴</small></div></dialog>
+    <dialog class="detail-dialog" data-detail-dialog><button type="button" class="dialog-close" data-detail-close aria-label="关闭">×</button><p class="eyebrow" data-detail-eyebrow>站点详情</p><h2 data-detail-title></h2><div class="detail-content" data-detail-content></div></dialog>
+    <dialog class="guide-dialog" data-guide-dialog><button type="button" class="dialog-close" data-guide-close aria-label="关闭">×</button><p class="eyebrow">HOW TO USE</p><h2>如何使用公益 API 导航</h2><ol><li>可以直接搜索站点名称、额度、模型或标签。</li><li>也可以点击顶部导航类型，筛选想要注册的站点。</li><li>查看状态、热度、稳定度和作者推荐后，点击“打开站点”。</li><li>显示“需科学上网”的站点，需要科学上网环境。</li><li>投稿、失效反馈和其它详情，请私信公众号。</li></ol><div class="qr-placeholder guide-qr"><span>公众号二维码</span><small>欢迎投稿和反馈</small></div></dialog>
     <script src="./assets/app.js"></script>
   </body>
 </html>
