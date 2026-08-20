@@ -1,6 +1,7 @@
 [
   {
     "id": "hubway",
+    "slug": "hubway",
     "name": "Hubway",
     "url": "https://hubway.org/",
     "category": "Chat API",
@@ -9,19 +10,39 @@
     "signIn": true,
     "recharge": true,
     "chargeEntry": "站内充值入口",
-    "authorRecommendation": "强烈推荐",
+    "inviteCode": "",
+    "authorRecommendation": "情况不明",
     "requiresVpn": false,
     "purePublic": false,
-    "sortOrder": 100,
+    "sortOrder": 0,
     "heat": 96,
     "stability": 92,
     "status": "稳定可用",
-    "updatedAt": "2026-08-18",
-    "tags": ["OpenAI", "Claude", "签到", "充值"],
-    "description": "适合日常对话、代码辅助和轻量测试，额度规则以站内最新公告为准。"
+    "updatedAt": "2026-08-20",
+    "tags": [
+      "OpenAI",
+      "Claude",
+      "签到",
+      "充值"
+    ],
+    "availableModels": [],
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "适合日常对话、代码辅助和轻量测试，额度规则以站内最新公告为准。",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-17",
+    "reviewNote": null
   },
   {
     "id": "aihub",
+    "slug": "aihub",
     "name": "AIHub",
     "url": "https://aihubmix.com/",
     "category": "聚合 API",
@@ -30,19 +51,38 @@
     "signIn": false,
     "recharge": true,
     "chargeEntry": "站内充值入口",
-    "authorRecommendation": "推荐",
+    "inviteCode": "",
+    "authorRecommendation": "情况不明",
     "requiresVpn": false,
     "purePublic": false,
-    "sortOrder": 90,
+    "sortOrder": 0,
     "heat": 91,
     "stability": 88,
     "status": "活动中",
-    "updatedAt": "2026-08-17",
-    "tags": ["多模型", "活动额度", "充值"],
-    "description": "多模型聚合入口，适合对比模型表现和备用通道。"
+    "updatedAt": "2026-08-20",
+    "tags": [
+      "多模型",
+      "活动额度",
+      "充值"
+    ],
+    "availableModels": [],
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "多模型聚合入口，适合对比模型表现和备用通道。",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-16",
+    "reviewNote": null
   },
   {
     "id": "truesota",
+    "slug": "truesota",
     "name": "True SOTA",
     "url": "https://api.truesota.cn/",
     "category": "模型 API",
@@ -51,40 +91,38 @@
     "signIn": false,
     "recharge": true,
     "chargeEntry": "站内充值入口",
-    "authorRecommendation": "推荐",
-    "requiresVpn": true,
+    "inviteCode": "",
+    "authorRecommendation": "情况不明",
+    "requiresVpn": false,
     "purePublic": false,
-    "sortOrder": 80,
+    "sortOrder": 0,
     "heat": 87,
     "stability": 84,
     "status": "可测试",
-    "updatedAt": "2026-08-15",
-    "tags": ["注册送额", "OpenAI", "备用"],
-    "description": "注册送额较高，适合新用户试用和 API 连通性测试。"
-  },
-  {
-    "id": "aurora-lab",
-    "name": "Aurora Lab",
-    "url": "https://example.com/aurora",
-    "category": "图像 API",
-    "freeQuota": "每日 30 次轻量调用",
-    "freeQuotaValue": 30,
-    "signIn": true,
-    "recharge": false,
-    "chargeEntry": "暂未发现",
-    "authorRecommendation": "情况不明",
-    "requiresVpn": false,
-    "purePublic": true,
-    "sortOrder": 60,
-    "heat": 76,
-    "stability": 79,
-    "status": "观察中",
-    "updatedAt": "2026-08-13",
-    "tags": ["生图", "每日额度", "签到"],
-    "description": "示例占位数据，用于展示生图类 API 的卡片状态和筛选效果。"
+    "updatedAt": "2026-08-20",
+    "tags": [
+      "注册送额",
+      "OpenAI",
+      "备用"
+    ],
+    "availableModels": [],
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "注册送额较高，适合新用户试用和 API 连通性测试。",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-14",
+    "reviewNote": null
   },
   {
     "id": "nebula-relay",
+    "slug": "nebula-relay",
     "name": "Nebula Relay",
     "url": "https://example.com/nebula",
     "category": "中转 API",
@@ -93,36 +131,73 @@
     "signIn": true,
     "recharge": true,
     "chargeEntry": "邀请页与充值页",
-    "authorRecommendation": "暂不推荐",
-    "requiresVpn": true,
+    "inviteCode": "",
+    "authorRecommendation": "情况不明",
+    "requiresVpn": false,
     "purePublic": false,
-    "sortOrder": 50,
+    "sortOrder": 0,
     "heat": 82,
     "stability": 73,
     "status": "需复核",
-    "updatedAt": "2026-08-11",
-    "tags": ["邀请奖励", "中转", "签到"],
-    "description": "示例占位数据，用于展示高额度但需要复核的 API 站点。"
+    "updatedAt": "2026-08-20",
+    "tags": [
+      "邀请奖励",
+      "中转",
+      "签到"
+    ],
+    "availableModels": [],
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "示例占位数据，用于展示高额度但需要复核的 API 站点。",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-10",
+    "reviewNote": null
   },
   {
-    "id": "clear-token",
-    "name": "Clear Token",
-    "url": "https://example.com/clear-token",
-    "category": "轻量工具",
-    "freeQuota": "注册送 5 美元，每周可领补贴包",
-    "freeQuotaValue": 5,
+    "id": "aurora-lab",
+    "slug": "aurora-lab",
+    "name": "Aurora Lab",
+    "url": "https://example.com/aurora",
+    "category": "图像 API",
+    "freeQuota": "每日 30 次轻量调用",
+    "freeQuotaValue": 30,
     "signIn": true,
     "recharge": false,
     "chargeEntry": "暂未发现",
+    "inviteCode": "",
     "authorRecommendation": "情况不明",
     "requiresVpn": false,
-    "purePublic": true,
-    "sortOrder": 40,
-    "heat": 68,
-    "stability": 81,
-    "status": "新收录",
-    "updatedAt": "2026-08-10",
-    "tags": ["轻量", "周补贴", "无需充值"],
-    "description": "示例占位数据，用于展示不带充值入口的公益类站点。"
+    "purePublic": false,
+    "sortOrder": 0,
+    "heat": 76,
+    "stability": 79,
+    "status": "观察中",
+    "updatedAt": "2026-08-20",
+    "tags": [
+      "生图",
+      "每日额度",
+      "签到"
+    ],
+    "availableModels": [],
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "示例占位数据，用于展示生图类 API 的卡片状态和筛选效果。",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-12",
+    "reviewNote": null
   }
 ]
