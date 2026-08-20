@@ -1,7 +1,12 @@
 const state = { sites: [], types: [], query: '', filter: 'all', sort: 'heat' };
 const iconExternal = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>';
 const recommendationClass = { '强烈推荐': 'recommend-hot', '推荐': 'recommend-good', '暂不推荐': 'recommend-no', '情况不明': 'recommend-unknown' };
-const recommendationIcon = { '强烈推荐': '✹', '推荐': '✦', '暂不推荐': '◇', '情况不明': '?' };
+const recommendationIcon = {
+  '强烈推荐': '<svg class="rec-mark rec-mark-hot" viewBox="0 0 32 32" aria-hidden="true"><path class="rec-hot-flame" d="M17.2 3.4c.8 4.1-2.9 5.8-2 9.3.4 1.5 1.4 2.5 2.8 3.1.8-1.5.9-3 .2-4.6 3.3 1.8 5.3 5 5.3 8.7A7.7 7.7 0 0 1 8.1 20c0-3.4 1.7-6.3 4.7-8.4-.2 2.3.5 4 2.1 5.1-1-5.2.6-9.4 2.3-13.3Z"/><path class="rec-hot-core" d="M16.1 16.2c2 1.7 3.1 3.5 2.8 5.4a3.1 3.1 0 0 1-6.2-.3c0-1.7 1-3.3 2.5-4.5-.1 1.2.2 2 .9 2.6.4-1.1.4-2.1 0-3.2Z"/><path class="rec-hot-spark rec-hot-spark-one" d="M24.6 5.1v3.4M22.9 6.8h3.4"/><path class="rec-hot-spark rec-hot-spark-two" d="M7.2 10.2v2.4M6 11.4h2.4"/></svg>',
+  '推荐': '<svg class="rec-mark rec-mark-good" viewBox="0 0 32 32" aria-hidden="true"><path class="rec-good-seal" d="M16 5.2 19 7l3.5.1 1.6 3.1 2.9 2-.7 3.4.7 3.4-2.9 2-1.6 3.1-3.5.1-3 1.8-3-1.8-3.5-.1L7.9 21 5 19l.7-3.4L5 12.2l2.9-2L9.5 7l3.5-.1L16 5.2Z"/><path class="rec-good-check" d="m11.1 16 3.1 3.1 6.7-7"/><path class="rec-good-spark" d="M24.9 4.2v3M23.4 5.7h3"/></svg>',
+  '暂不推荐': '<svg class="rec-mark rec-mark-no" viewBox="0 0 32 32" aria-hidden="true"><path class="rec-no-orbit" d="M6.2 16c2.3-4.4 5.6-6.6 9.8-6.6s7.5 2.2 9.8 6.6c-2.3 4.4-5.6 6.6-9.8 6.6S8.5 20.4 6.2 16Z"/><path class="rec-no-pupil" d="M18.9 13.1a4.1 4.1 0 0 1-5.8 5.8"/><path class="rec-no-slash" d="m8.4 8.4 15.2 15.2"/></svg>',
+  '情况不明': '<svg class="rec-mark rec-mark-unknown" viewBox="0 0 32 32" aria-hidden="true"><circle class="rec-unknown-ring" cx="16" cy="16" r="10.5"/><path class="rec-unknown-needle" d="m19.7 12.3-2.1 5.3-5.3 2.1 2.1-5.3 5.3-2.1Z"/><circle class="rec-unknown-dot" cx="16" cy="16" r="1.2"/></svg>'
+};
 function escapeHtml(value) { return String(value ?? '').replace(/[&<>"']/g, char => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[char])); }
 function safeHref(value) { try { const url = new URL(String(value)); return ['http:','https:'].includes(url.protocol) ? url.href : '#'; } catch { return '#'; } }
 function getDataPaths() { const body = document.body; return { data: body.dataset.data || './data/sites.json', types: './data/types.json', config: body.dataset.config || './config/public.config.json' }; }
