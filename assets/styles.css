@@ -632,6 +632,10 @@ select {
 .qr-placeholder { display:grid; min-height:220px; margin-top:20px; place-items:center; align-content:center; gap:8px; border:1px dashed #fdba74; border-radius:18px; background:white; color:#c2410c; }
 .qr-placeholder small { color:var(--muted); }
 .qr-placeholder img { display:block; width:min(240px,100%); height:auto; border-radius:14px; }
+.qr-prompt { display:grid; gap:4px; margin-top:18px; padding:14px 16px; border:1px solid #f4b183; border-left:4px solid #f04a22; border-radius:14px; background:linear-gradient(110deg,#fff3e9,#fffaf3); }
+.qr-prompt > span { width:max-content; padding:3px 7px; border-radius:999px; background:#f04a22; color:#fff; font-size:11px; font-weight:800; letter-spacing:.04em; }
+.qr-prompt > strong { color:#9f2f16; font-size:16px; line-height:1.4; }
+.qr-prompt > p { margin:0; color:#9a644e; font-size:12px; line-height:1.5; }
 .public-note { width:fit-content; margin:-4px 0 10px; padding:4px 8px; border-radius:999px; color:#047857; background:#ecfdf5; border:1px solid #6ee7b7; font-size:12px; }
 
 .notes {
@@ -1179,6 +1183,9 @@ body.theme-minimal .shell {
 .guide-note span { color:#9a3412; font-size:13px; line-height:1.6; }
 .guide-note .guide-qr { margin-top:auto; min-height:140px; border-color:#fdba74; background:#fff; }
 .guide-note .guide-qr img { width:min(150px,100%); }
+.guide-note .qr-prompt { margin-top:2px; padding:12px 13px; background:rgba(255,255,255,.65); }
+.guide-note .qr-prompt > strong { font-size:15px; }
+.guide-note .qr-prompt > p { font-size:12px; }
 @media (max-width:760px) { .theme-minimal .layout { display:block; } .guide-layout { grid-template-columns:1fr; } .guide-note { min-height:260px; } }
 
 /* Correct the legacy compact-theme grid. The public rows use only the areas below. */
