@@ -1158,3 +1158,22 @@ body.theme-minimal .shell {
 .guide-note .guide-qr { margin-top:auto; min-height:140px; border-color:#fdba74; background:#fff; }
 .guide-note .guide-qr img { width:min(150px,100%); }
 @media (max-width:760px) { .theme-minimal .layout { display:block; } .guide-layout { grid-template-columns:1fr; } .guide-note { min-height:260px; } }
+
+/* Correct the legacy compact-theme grid. The public rows use only the areas below. */
+@media (min-width:761px) {
+  .theme-minimal .layout { display:grid !important; grid-template-columns:minmax(0,1fr) 320px !important; gap:14px !important; width:min(1500px,100%) !important; padding-left:clamp(16px,3vw,40px) !important; padding-right:clamp(16px,3vw,40px) !important; }
+  .theme-minimal .api-card { position:relative; display:grid !important; grid-template-columns:minmax(0,1.12fr) minmax(0,.78fr) minmax(0,1.25fr) minmax(118px,.8fr) minmax(188px,1.45fr) minmax(158px,1.1fr) !important; grid-template-areas:"name types desc models facts action" !important; gap:8px !important; height:74px !important; min-height:74px !important; overflow:hidden !important; }
+  .theme-minimal .api-card > .row-name { grid-area:name !important; display:flex !important; min-width:0 !important; }
+  .theme-minimal .api-card > .row-types { grid-area:types !important; display:flex !important; min-width:0 !important; }
+  .theme-minimal .api-card > .row-description { grid-area:desc !important; display:flex !important; min-width:0 !important; }
+  .theme-minimal .api-card > .row-models { grid-area:models !important; display:block !important; min-width:0 !important; }
+  .theme-minimal .api-card > .facts { grid-area:facts !important; display:grid !important; min-width:0 !important; }
+  .theme-minimal .api-card > .row-status { position:absolute !important; left:12px !important; bottom:3px !important; }
+  .theme-minimal .api-card > .card-actions { grid-area:action !important; display:flex !important; min-width:0 !important; }
+  .theme-minimal .api-card > .row-name,
+  .theme-minimal .api-card > .row-types,
+  .theme-minimal .api-card > .row-description,
+  .theme-minimal .api-card > .row-models,
+  .theme-minimal .api-card > .facts,
+  .theme-minimal .api-card > .card-actions { align-self:center !important; }
+}
