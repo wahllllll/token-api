@@ -4,7 +4,7 @@ const recommendationClass = { '强烈推荐': 'recommend-hot', '推荐': 'recomm
 function escapeHtml(value) { return String(value ?? '').replace(/[&<>"']/g, char => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[char])); }
 function safeHref(value) { try { const url = new URL(String(value)); return ['http:','https:'].includes(url.protocol) ? url.href : '#'; } catch { return '#'; } }
 function getDataPaths() { const body = document.body; return { data: body.dataset.data || './data/sites.json', types: './data/types.json', config: body.dataset.config || './config/public.config.json' }; }
-async function loadJson(path) { const response = await fetch(path, { cache: 'no-store' }); if (!response.ok) throw new Error(`${path} ${response.status}`); return response.json(); }
+async function loadJson(path, cacheBust = false) { const url = cacheBust ? `${path}${path.includes('?') ? '&' : '?'}t=${Date.now()}` : path; const response = await fetch(url, { cache: 'no-store' }); if (!response.ok) throw new Error(`${path} ${response.status}`); return response.json(); }
 function hasType(site, type) {
   if (site.types?.some(item => item.slug === type.slug || item.id === type.id)) return true;
   if (type.slug === 'sign-in') return site.signIn;
@@ -21,6 +21,35 @@ function bindControls() {
   document.querySelector('[data-contact-close]')?.addEventListener('click', () => document.querySelector('[data-contact-dialog]')?.close());
   document.querySelector('[data-search]')?.addEventListener('input', event => { state.query = event.target.value.trim().toLowerCase(); render(); });
   document.querySelector('[data-sort]')?.addEventListener('change', event => { state.sort = event.target.value; render(); });
+  document.querySelector('[data-refresh]')?.addEventListener('click', refreshData);
+}
+async function refreshData() {
+  const button = document.querySelector('[data-refresh]');
+  const label = document.querySelector('[data-refresh-label]');
+  if (!button) return;
+  button.disabled = true;
+  if (label) label.textContent = '刷新中…';
+  try {
+    const paths = getDataPaths();
+    const config = await loadJson(paths.config, true).catch(() => ({}));
+    const api = config.futureApi;
+    if (api?.enabled && api.baseUrl) {
+      const response = await loadJson(`${api.baseUrl.replace(/\/$/,'')}${api.sitesEndpoint || '/sites'}`, true);
+      state.sites = Array.isArray(response) ? response : response.data || [];
+      state.types = response.types || state.types;
+    } else {
+      state.sites = await loadJson(paths.data, true);
+      state.types = await loadJson(paths.types, true).catch(() => state.types);
+    }
+    render();
+    if (label) label.textContent = `已更新 ${new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })}`;
+  } catch (error) {
+    if (label) label.textContent = '刷新失败';
+    console.error(error);
+  } finally {
+    button.disabled = false;
+    window.setTimeout(() => { if (label && !button.disabled) label.textContent = '刷新数据'; }, 2600);
+  }
 }
 function renderFilters() {
   const container = document.querySelector('[data-filters]'); if (!container) return;

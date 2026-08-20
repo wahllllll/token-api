@@ -331,6 +331,23 @@ select {
   background: transparent;
   color: var(--text);
 }
+.refresh-button {
+  display:inline-flex;
+  min-height:48px;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  padding:0 15px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+  color:var(--text);
+  cursor:pointer;
+  white-space:nowrap;
+}
+.refresh-button:hover { border-color:var(--primary); background:color-mix(in srgb,var(--primary) 12%,var(--surface)); }
+.refresh-button:disabled { cursor:wait; opacity:.65; }
+.refresh-button span:first-child { font-size:20px; line-height:1; }
 
 .search-box input {
   padding: 0 16px;
@@ -829,7 +846,7 @@ body.theme-minimal .shell {
 }
 
 .theme-minimal .toolbar {
-  grid-template-columns: minmax(240px, 1fr) 170px;
+  grid-template-columns: minmax(240px, 1fr) 170px auto;
   gap: 8px;
   margin-bottom: 8px;
 }
@@ -837,7 +854,8 @@ body.theme-minimal .shell {
 .theme-minimal .search-box,
 .theme-minimal .sort-box,
 .theme-minimal .search-box input,
-.theme-minimal .sort-box select {
+.theme-minimal .sort-box select,
+.theme-minimal .refresh-button {
   min-height: 40px;
 }
 
