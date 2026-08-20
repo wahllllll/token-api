@@ -1,0 +1,22 @@
+.env
+.env.*
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# 私有后台、服务器、数据库和运维资料仅保留在本机及服务器。
+admin.html
+assets/admin.js
+assets/admin.css
+config/site.config.json
+server/
+db/
+docs/
+scripts/
+package.json
+package-lock.json
+DESIGN_PLAN.md
+*AGENTS.md instructions_*
+*.secret

@@ -1,0 +1,44 @@
+name: Deploy public site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Prepare public artifact
+        shell: bash
+        run: |
+          mkdir -p _site/assets _site/config _site/data
+          cp index.html .nojekyll _site/
+          cp assets/app.js assets/styles.css assets/wechat-qr.jpg _site/assets/
+          cp config/public.config.json _site/config/
+          cp data/sites.json data/types.json _site/data/ 2>/dev/null || cp data/sites.json _site/data/
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

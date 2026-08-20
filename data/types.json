@@ -1,0 +1,9 @@
+[
+  {"id":1,"slug":"pure-public","name":"纯公益","description":"无充值入口或以公益分享为主","color":"#059669","sortOrder":1000,"showFilter":true,"showMetric":false,"isActive":true},
+  {"id":2,"slug":"sign-in","name":"可签到","description":"支持每日签到或周期领取额度","color":"#2563eb","sortOrder":900,"showFilter":true,"showMetric":true,"isActive":true},
+  {"id":3,"slug":"high-quota","name":"高额度","description":"免费额度相对较高","color":"#d97706","sortOrder":800,"showFilter":true,"showMetric":true,"isActive":true},
+  {"id":4,"slug":"stable","name":"稳定优先","description":"近期稳定度较高","color":"#7c3aed","sortOrder":700,"showFilter":true,"showMetric":false,"isActive":true},
+  {"id":5,"slug":"recharge","name":"有充值口","description":"提供充值或余额入口","color":"#db2777","sortOrder":600,"showFilter":true,"showMetric":true,"isActive":true},
+  {"id":6,"slug":"image","name":"生图相关","description":"包含图像生成模型或接口","color":"#0891b2","sortOrder":500,"showFilter":true,"showMetric":false,"isActive":true},
+  {"id":7,"slug":"vpn","name":"需科学上网","description":"访问需要科学上网","color":"#4f46e5","sortOrder":400,"showFilter":true,"showMetric":false,"isActive":true}
+]

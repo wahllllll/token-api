@@ -1,0 +1,12 @@
+{
+  "projectName": "Token API Radar",
+  "siteName": "公益 API 分享站",
+  "mode": "static",
+  "dataSource": "./data/sites.json",
+  "typesSource": "./data/types.json",
+  "community": {
+    "title": "共同维护公益导航",
+    "note": "详情、失效反馈、收录建议和邀请码，请私信公众号。",
+    "qrImage": "./assets/wechat-qr.jpg"
+  }
+}
