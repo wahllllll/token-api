@@ -18,5 +18,6 @@ scripts/
 package.json
 package-lock.json
 DESIGN_PLAN.md
+designs/
 *AGENTS.md instructions_*
 *.secret
