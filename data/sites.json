@@ -5,35 +5,41 @@
     "name": "Agent Router",
     "url": "https://agentrouter.org/register?aff=sW9d",
     "category": "Other",
-    "freeQuota": "注册就送175刀+每天签到25刀",
+    "freeQuota": "",
     "freeQuotaValue": 175,
     "signIn": true,
     "recharge": false,
     "chargeEntry": "无充值纯公益",
     "inviteCode": "",
-    "authorRecommendation": "情况不明",
+    "authorRecommendation": "强烈推荐",
     "requiresVpn": true,
     "purePublic": true,
     "sortOrder": 100,
     "heat": 100,
     "stability": 90,
-    "status": "观察中",
+    "status": "活动中",
     "updatedAt": "2026-08-20",
     "tags": [],
-    "availableModels": [],
-    "typeIds": [],
+    "availableModels": [
+      "gpt5.6sol",
+      "claude opus5",
+      "claude opus4.8"
+    ],
+    "typeIds": [
+      1
+    ],
     "types": [
       {
-        "id": null,
-        "name": null,
-        "slug": null,
-        "color": null
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
       }
     ],
-    "description": "12",
+    "description": "注册就送175刀+每天签到25刀",
     "isPublished": true,
-    "lastCheckedAt": "2026-08-17",
-    "reviewNote": "2"
+    "lastCheckedAt": "2026-08-16",
+    "reviewNote": null
   },
   {
     "id": "hubway",

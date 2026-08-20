@@ -75,5 +75,27 @@
     "showFilter": true,
     "showMetric": false,
     "isActive": true
+  },
+  {
+    "id": 9,
+    "slug": "国外为主",
+    "name": "国外为主",
+    "description": "",
+    "color": "#2ed139",
+    "sortOrder": 2,
+    "showFilter": true,
+    "showMetric": false,
+    "isActive": true
+  },
+  {
+    "id": 8,
+    "slug": "国模为主",
+    "name": "国模为主",
+    "description": "",
+    "color": "#dee12d",
+    "sortOrder": 1,
+    "showFilter": true,
+    "showMetric": false,
+    "isActive": true
   }
 ]
