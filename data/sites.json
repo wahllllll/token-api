@@ -5,7 +5,7 @@
     "name": "Agent Router",
     "url": "https://agentrouter.org/register?aff=sW9d",
     "category": "纯公益",
-    "freeQuota": "173刀",
+    "freeQuota": "注册就送175刀+每天签到25刀",
     "freeQuotaValue": 175,
     "signIn": true,
     "recharge": false,
@@ -18,7 +18,7 @@
     "heat": 100,
     "stability": 90,
     "status": "活动中",
-    "updatedAt": "2026-08-20",
+    "updatedAt": "2026-08-21",
     "tags": [
       "好好学力"
     ],
@@ -71,7 +71,7 @@
     ],
     "description": "注册就送175刀+每天签到25刀",
     "isPublished": true,
-    "lastCheckedAt": "2026-08-12",
+    "lastCheckedAt": "2026-08-11",
     "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.5 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
   },
   {
@@ -146,6 +146,79 @@
     "isPublished": true,
     "lastCheckedAt": "2026-08-18",
     "reviewNote": "最新开放注册，速注册"
+  },
+  {
+    "id": "anyrouter",
+    "slug": "anyrouter",
+    "name": "AnyRouter",
+    "url": "https://anyrouter.top/register?aff=2VZq",
+    "category": "纯公益",
+    "freeQuota": "注册给100刀左右，每天签到25刀",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "AnyRouter啊， 懂得都懂，每日签到送25刀",
+    "authorRecommendation": "推荐",
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 90,
+    "heat": 90,
+    "stability": 90,
+    "status": "使用中",
+    "updatedAt": "2026-08-21",
+    "tags": [],
+    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8\ngpt5.6sol\ngpt5.5",
+    "typeIds": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      9
+    ],
+    "types": [
+      {
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册给100刀左右，每天签到25刀",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-17",
+    "reviewNote": "个人资料，没人签到"
   },
   {
     "id": "tabitoken",
@@ -289,79 +362,6 @@
     "isPublished": true,
     "lastCheckedAt": "2026-08-19",
     "reviewNote": null
-  },
-  {
-    "id": "anyrouter",
-    "slug": "anyrouter",
-    "name": "AnyRouter",
-    "url": "https://gorouter.app/sign-up?aff=RL72",
-    "category": "纯公益",
-    "freeQuota": "注册给100刀左右，每天签到25刀",
-    "freeQuotaValue": 100,
-    "signIn": true,
-    "recharge": false,
-    "chargeEntry": "无",
-    "inviteCode": "AnyRouter啊， 懂得都懂，每日签到送25刀",
-    "authorRecommendation": "推荐",
-    "requiresVpn": true,
-    "purePublic": true,
-    "sortOrder": 90,
-    "heat": 90,
-    "stability": 90,
-    "status": "使用中",
-    "updatedAt": "2026-08-20",
-    "tags": [],
-    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8\ngpt5.6sol\ngpt5.5",
-    "typeIds": [
-      1,
-      2,
-      3,
-      4,
-      7,
-      9
-    ],
-    "types": [
-      {
-        "id": 1,
-        "name": "纯公益",
-        "slug": "pure-public",
-        "color": "#059669"
-      },
-      {
-        "id": 2,
-        "name": "可签到",
-        "slug": "sign-in",
-        "color": "#2563eb"
-      },
-      {
-        "id": 3,
-        "name": "高额度",
-        "slug": "high-quota",
-        "color": "#d97706"
-      },
-      {
-        "id": 4,
-        "name": "稳定优先",
-        "slug": "stable",
-        "color": "#7c3aed"
-      },
-      {
-        "id": 7,
-        "name": "需科学上网",
-        "slug": "vpn",
-        "color": "#4f46e5"
-      },
-      {
-        "id": 9,
-        "name": "国外为主",
-        "slug": "国外为主",
-        "color": "#2ed139"
-      }
-    ],
-    "description": "注册给100刀左右，每天签到25刀",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-18",
-    "reviewNote": "个人资料，没人签到"
   },
   {
     "id": "辉哥中转公益站",
