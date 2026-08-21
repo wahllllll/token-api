@@ -364,6 +364,65 @@
     "reviewNote": "个人资料，没人签到"
   },
   {
+    "id": "辉哥中转公益站",
+    "slug": "辉哥中转公益站",
+    "name": "辉哥中转公益站",
+    "url": "https://lzhiyu.ccwu.cc/register?ref=REF-F39EA18853",
+    "category": "纯公益",
+    "freeQuota": "注册赠送100次 每天签到50-100",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "",
+    "authorRecommendation": "推荐",
+    "requiresVpn": false,
+    "purePublic": true,
+    "sortOrder": 88,
+    "heat": 88,
+    "stability": 90,
+    "status": "可使用",
+    "updatedAt": "2026-08-21",
+    "tags": [],
+    "availableModels": "聚合平台 免费的大模型中转站，兼容 OpenAI 接口格式。GPT、Claude、Gemini、DeepSeek、Kimi、GLM、Grok、Qwen 这些都能用",
+    "typeIds": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "types": [
+      {
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 8,
+        "name": "国模为主",
+        "slug": "国模为主",
+        "color": "#dee12d"
+      }
+    ],
+    "description": "注册赠送100次 每天签到50-100 国模优先",
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-20",
+    "reviewNote": "免费的大模型中转站，兼容 OpenAI 接口格式。GPT、Claude、Gemini、DeepSeek、Kimi、GLM、Grok、Qwen 这些都能用。先注册账号进控制台生成密钥，再去客户端里填"
+  },
+  {
     "id": "seekai",
     "slug": "seekai",
     "name": "Seekai",
