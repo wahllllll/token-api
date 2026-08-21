@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p _site/assets _site/config _site/data
           cp index.html .nojekyll _site/
-          cp assets/app.js assets/styles.css assets/wechat-qr.jpg _site/assets/
+          cp assets/app.js assets/styles.css assets/wechat-qr.jpg assets/tutorial-demo.svg _site/assets/
           cp config/public.config.json _site/config/
           cp data/sites.json data/types.json _site/data/ 2>/dev/null || cp data/sites.json _site/data/
       - name: Upload static site
