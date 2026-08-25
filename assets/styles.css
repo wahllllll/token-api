@@ -1263,7 +1263,9 @@ body.theme-minimal .shell {
 .disclaimer-copy ul { margin:0; padding-left:20px; color:var(--muted); line-height:1.75; }
 .contribution-callout { display:grid; gap:4px; margin-top:14px; padding:15px 17px; border-left:4px solid #cf7b4b; border-radius:12px; background:#fff0e4; }
 .contribution-callout span { color:var(--muted); line-height:1.6; }
-.tutorial-dialog { display:flex; flex-direction:column; width:min(900px,calc(100% - 24px)); height:min(86vh,760px); max-height:86vh; padding:0; overflow:hidden; overscroll-behavior:contain; }
+.tutorial-dialog { width:min(900px,calc(100% - 24px)); height:min(86vh,760px); max-height:86vh; padding:0; overflow:hidden; overscroll-behavior:contain; }
+.tutorial-dialog[open] { display:flex; flex-direction:column; }
+.tutorial-dialog:not([open]) { display:none; }
 .tutorial-dialog > .dialog-close { z-index:3; }
 .tutorial-head { position:sticky; top:0; z-index:2; display:flex; align-items:flex-start; justify-content:space-between; gap:20px; padding:24px 74px 20px 28px; border-bottom:1px solid var(--line); background:rgba(255,250,243,.96); backdrop-filter:blur(14px); }
 .tutorial-head h2 { margin:0; font-size:24px; }
