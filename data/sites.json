@@ -11,7 +11,8 @@
     "recharge": false,
     "chargeEntry": "无充值纯公益",
     "inviteCode": "纯公益无充值入口",
-    "authorRecommendation": "强烈推荐",
+  "authorRecommendation": "强烈推荐",
+  "isPinned": true,
     "requiresVpn": true,
     "purePublic": true,
     "sortOrder": 100,
@@ -71,7 +72,29 @@
     ],
     "description": "注册就送175刀+每天签到25刀",
     "isPublished": true,
-    "lastCheckedAt": "2026-08-11",
+  "lastCheckedAt": "2026-08-24 08:00:00",
+  "tutorial": {
+    "summary": "使用 CC Switch 将 Agent Router 接入 GPT：安装客户端、创建令牌、填写接口并完成对话测试。",
+    "preface": "本教程根据站长整理的《中转站怎么接入 GPT》演示制作。Agent Router 提供 OpenAI 兼容接口；令牌只应保存在自己的客户端配置中，切勿截图或转发。签到提示：签到必须先退出登录，再重新登录账号，登录成功后会自动签到。",
+    "blocks": [
+      { "type": "notice", "tone": "warning", "title": "签到提示（请先看）", "text": "Agent Router 的签到必须退出当前登录，再重新登录；重新登录后会自动完成签到。" },
+      { "type": "heading", "text": "1. 准备 GPT 与 CC Switch" },
+      { "type": "paragraph", "text": "先安装 GPT 客户端（教程演示使用 ChatGPT/Codex），再安装 CC Switch。安装完成后先不要打开 GPT，继续完成 CC Switch 配置。" },
+      { "type": "steps", "items": ["下载 GPT：https://chatgpt.com/zh-Hans-CN/codex/。", "下载 CC Switch：https://ccswitch.io/zh/。", "Windows 和 Mac 的 CC Switch 操作基本一致，安装完成后打开 CC Switch。"] },
+      { "type": "heading", "text": "2. 在 CC Switch 添加 Agent Router 令牌" },
+      { "type": "steps", "items": ["打开 Agent Router 令牌页面：https://agentrouter.org/console/token。", "登录后创建一个新令牌并复制保存；令牌只显示一次时请立即保存。", "回到 CC Switch，进入令牌/供应商配置，添加刚刚复制的令牌。"] },
+      { "type": "heading", "text": "3. 填写 API 请求地址" },
+      { "type": "paragraph", "text": "如果当前网络可以使用科学上网（VPN），请求地址填写 https://agentrouter.org/v1；如果使用国内网络、没有 VPN，则填写 https://ps.air-outer.com/v1。模型名称按 Agent Router 控制台实际可用模型填写。" },
+      { "type": "code", "language": "配置参考", "code": "API Key: 你的 Agent Router 令牌\n请求地址（VPN）: https://agentrouter.org/v1\n请求地址（国内网络）: https://ps.air-outer.com/v1\n模型: 选择控制台中可用的模型" },
+      { "type": "heading", "text": "4. 打开 GPT 并测试" },
+      { "type": "steps", "items": ["保存 CC Switch 配置后，打开 GPT。", "随便输入一条不含隐私的测试内容。", "GPT 正常回复即表示配置完成，可以开始使用。"] },
+      { "type": "notice", "tone": "success", "title": "配置完成", "text": "先用普通问题验证连通性，再进行正式工作；不要把 API Key、账号密码或敏感业务数据发给他人。" },
+      { "type": "attachments", "items": [
+        { "name": "Agent Router 令牌控制台", "url": "https://agentrouter.org/console/token", "kind": "link", "meta": "创建与管理令牌" },
+        { "name": "CC Switch 官方下载", "url": "https://ccswitch.io/zh/", "kind": "link", "meta": "Windows / Mac" }
+      ] }
+    ]
+  },
     "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.5 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
   },
   {

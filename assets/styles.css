@@ -1229,6 +1229,19 @@ body.theme-minimal .shell {
 @media (max-width:980px) { .api-card { grid-template-columns: minmax(125px,1fr) minmax(100px,.8fr) minmax(130px,1fr) 120px 170px; grid-template-areas:"name types desc facts action"; } .row-models { display:none; } }
 @media (max-width:760px) { .layout { display:block; } .side-panel { margin-top:14px; } .api-card { grid-template-columns:1fr; grid-template-areas:"name" "types" "desc" "models" "facts" "action"; height:auto; min-height:250px; } .row-status { position:static; opacity:1; transform:none; } .row-description span { white-space:normal; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; } .facts { grid-template-columns:repeat(4,minmax(0,1fr)); } }
 
+/* Verification and long-name readability. */
+.theme-minimal .api-card { position:relative; }
+.theme-minimal .row-name { padding-top:10px; }
+.theme-minimal .api-card.is-pinned { border-color:#e3a24b; background:linear-gradient(100deg,#fffaf0,#fff); }
+.theme-minimal .card-recommendation { position:absolute; top:7px; left:9px; z-index:2; height:auto; }
+.theme-minimal .card-recommendation .rec-label { min-height:18px; max-width:none; padding:2px 6px; font-size:9px; }
+.theme-minimal .card-pin { position:absolute; top:7px; right:9px; z-index:2; padding:3px 7px; border:1px solid #e7a23b; border-radius:999px; background:#fff4d6; color:#9a5b08; font-size:10px; font-weight:800; line-height:1.1; }
+.theme-minimal .verification-note { display:grid; gap:1px; max-width:100%; margin-bottom:5px; overflow:hidden; color:#147a5b; font-size:10px; line-height:1.35; }
+.theme-minimal .verification-note strong, .theme-minimal .verification-note span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.theme-minimal .pin-legend { color:#9a5b08; font-weight:700; }
+.theme-minimal .row-models { align-self:center; }
+.theme-minimal .name-line h2 { overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; line-height:1.25; }
+
 /* Final layout override: keep statistics on the far right on desktop/tablet. */
 .theme-minimal .layout { display:grid; grid-template-columns:minmax(0,1fr) 320px; align-items:start; }
 .theme-minimal .main-panel { position:relative; z-index:1; min-width:0; color:var(--text); }
@@ -1250,13 +1263,13 @@ body.theme-minimal .shell {
 .disclaimer-copy ul { margin:0; padding-left:20px; color:var(--muted); line-height:1.75; }
 .contribution-callout { display:grid; gap:4px; margin-top:14px; padding:15px 17px; border-left:4px solid #cf7b4b; border-radius:12px; background:#fff0e4; }
 .contribution-callout span { color:var(--muted); line-height:1.6; }
-.tutorial-dialog { width:min(900px,calc(100% - 24px)); padding:0; overflow:hidden; }
+.tutorial-dialog { display:flex; flex-direction:column; width:min(900px,calc(100% - 24px)); height:min(86vh,760px); max-height:86vh; padding:0; overflow:hidden; overscroll-behavior:contain; }
 .tutorial-dialog > .dialog-close { z-index:3; }
 .tutorial-head { position:sticky; top:0; z-index:2; display:flex; align-items:flex-start; justify-content:space-between; gap:20px; padding:24px 74px 20px 28px; border-bottom:1px solid var(--line); background:rgba(255,250,243,.96); backdrop-filter:blur(14px); }
 .tutorial-head h2 { margin:0; font-size:24px; }
 .tutorial-head > div > p:last-child { margin:8px 0 0; color:var(--muted); }
 .preface-button { flex:0 0 auto; min-height:34px; padding:0 11px; border:1px solid #d7b89f; border-radius:999px; background:#fff; color:#8a5739; cursor:pointer; }
-.tutorial-content { display:grid; gap:18px; padding:24px 28px 32px; }
+.tutorial-content { display:grid; gap:18px; min-height:0; flex:1 1 auto; overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; touch-action:pan-y; scrollbar-gutter:stable; padding:24px 28px 32px; }
 .tutorial-heading { margin:6px 0 -4px; font-size:18px; }
 .tutorial-paragraph { margin:0; color:var(--muted); line-height:1.75; }
 .tutorial-notice { padding:15px 17px; border:1px solid #f0c394; border-left-width:4px; border-radius:12px; background:#fff8ee; }
@@ -1312,7 +1325,7 @@ body.theme-minimal .shell {
 /* Correct the legacy compact-theme grid. The public rows use only the areas below. */
 @media (min-width:761px) {
   .theme-minimal .layout { display:grid !important; grid-template-columns:minmax(0,1fr) 340px !important; gap:18px !important; width:100% !important; max-width:none !important; padding:24px 32px 56px !important; }
-  .theme-minimal .api-card { position:relative; display:grid !important; grid-template-columns:minmax(170px,1.15fr) minmax(180px,1.1fr) minmax(190px,1.45fr) minmax(130px,.8fr) minmax(220px,1.25fr) minmax(196px,1fr) !important; grid-template-areas:"name types desc models facts action" !important; gap:12px !important; height:96px !important; min-height:96px !important; overflow:hidden !important; padding:14px 16px !important; }
+   .theme-minimal .api-card { position:relative; display:grid !important; grid-template-columns:minmax(170px,1.15fr) minmax(180px,1.1fr) minmax(190px,1.45fr) minmax(130px,.8fr) minmax(220px,1.25fr) minmax(196px,1fr) !important; grid-template-areas:"name types desc models facts action" !important; gap:12px !important; height:auto !important; min-height:108px !important; overflow:visible !important; padding:14px 16px !important; }
   .theme-minimal .api-card > .row-name { grid-area:name !important; display:flex !important; min-width:0 !important; }
   .theme-minimal .api-card > .row-types { grid-area:types !important; display:flex !important; min-width:0 !important; }
   .theme-minimal .api-card > .row-description { grid-area:desc !important; display:flex !important; min-width:0 !important; }
@@ -1320,12 +1333,13 @@ body.theme-minimal .shell {
   .theme-minimal .api-card > .facts { grid-area:facts !important; display:grid !important; min-width:0 !important; }
   .theme-minimal .api-card > .row-status { position:absolute !important; left:16px !important; bottom:8px !important; opacity:1 !important; transform:none !important; }
   .theme-minimal .api-card > .card-actions { grid-area:action !important; display:flex !important; min-width:0 !important; }
-  .theme-minimal .api-card > .row-name,
+   .theme-minimal .api-card > .row-name,
   .theme-minimal .api-card > .row-types,
   .theme-minimal .api-card > .row-description,
   .theme-minimal .api-card > .row-models,
   .theme-minimal .api-card > .facts,
-  .theme-minimal .api-card > .card-actions { align-self:center !important; }
+   .theme-minimal .api-card > .card-actions { align-self:center !important; }
+   .theme-minimal .api-card > .row-name { align-self:start !important; }
 }
 
 @media (min-width:761px) and (max-width:1500px) {
@@ -1363,7 +1377,7 @@ body.theme-minimal .shell {
   body.theme-minimal .api-card { display:grid !important; grid-template-columns:minmax(0,1fr) minmax(146px,46%) !important; grid-template-areas:"name action" "types action" "desc desc" "models models" "facts facts" "status status" !important; align-items:center; width:100%; min-width:0; min-height:0; height:auto !important; padding:14px !important; gap:9px 10px !important; border-radius:16px; overflow:hidden !important; }
   body.theme-minimal .api-card > .row-name { grid-area:name !important; min-width:0; align-self:center !important; }
   body.theme-minimal .name-line { min-width:0; gap:4px; }
-  body.theme-minimal .name-line h2 { font-size:17px; }
+  body.theme-minimal .name-line h2 { font-size:17px; line-height:1.3; white-space:normal; overflow:visible; overflow-wrap:anywhere; }
   body.theme-minimal .rec-icon { flex:0 0 auto; width:auto; min-width:0; height:24px; }
   body.theme-minimal .rec-label { max-width:76px; }
   body.theme-minimal .row-name .category { flex-basis:52px; max-width:52px; padding:3px 5px; font-size:11px; }
@@ -1399,7 +1413,7 @@ body.theme-minimal .shell {
   body.theme-minimal .guide-note { padding:15px; }
   body.theme-minimal .tutorial-head { padding:20px 62px 16px 18px; }
   body.theme-minimal .tutorial-head h2 { font-size:20px; }
-  body.theme-minimal .tutorial-content { padding:18px; }
+  body.theme-minimal .tutorial-content { min-height:0; overflow-y:auto; padding:18px; }
   body.theme-minimal .tutorial-dialog, body.theme-minimal .preview-dialog { padding:0; }
   body.theme-minimal .attachment-card { grid-template-columns:42px minmax(0,1fr) auto; gap:8px; }
   body.theme-minimal .attachment-card button span { display:none; }
