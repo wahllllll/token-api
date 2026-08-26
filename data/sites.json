@@ -11,15 +11,15 @@
     "recharge": false,
     "chargeEntry": "无充值纯公益",
     "inviteCode": "纯公益无充值入口",
-  "authorRecommendation": "强烈推荐",
-  "isPinned": true,
+    "authorRecommendation": "强烈推荐",
+    "isPinned": true,
     "requiresVpn": true,
     "purePublic": true,
     "sortOrder": 100,
     "heat": 100,
     "stability": 90,
     "status": "活动中",
-    "updatedAt": "2026-08-21",
+    "updatedAt": "2026-08-26",
     "tags": [
       "好好学力"
     ],
@@ -71,245 +71,10 @@
       }
     ],
     "description": "注册就送175刀+每天签到25刀",
+    "tutorial": null,
     "isPublished": true,
-  "lastCheckedAt": "2026-08-24 08:00:00",
-  "tutorial": {
-    "summary": "使用 CC Switch 将 Agent Router 接入 GPT：安装客户端、创建令牌、填写接口并完成对话测试。",
-    "preface": "本教程根据站长整理的《中转站怎么接入 GPT》演示制作。Agent Router 提供 OpenAI 兼容接口；令牌只应保存在自己的客户端配置中，切勿截图或转发。签到提示：签到必须先退出登录，再重新登录账号，登录成功后会自动签到。",
-    "blocks": [
-      { "type": "notice", "tone": "warning", "title": "签到提示（请先看）", "text": "Agent Router 的签到必须退出当前登录，再重新登录；重新登录后会自动完成签到。" },
-      { "type": "heading", "text": "1. 准备 GPT 与 CC Switch" },
-      { "type": "paragraph", "text": "先安装 GPT 客户端（教程演示使用 ChatGPT/Codex），再安装 CC Switch。安装完成后先不要打开 GPT，继续完成 CC Switch 配置。" },
-      { "type": "steps", "items": ["下载 GPT：https://chatgpt.com/zh-Hans-CN/codex/。", "下载 CC Switch：https://ccswitch.io/zh/。", "Windows 和 Mac 的 CC Switch 操作基本一致，安装完成后打开 CC Switch。"] },
-      { "type": "heading", "text": "2. 在 CC Switch 添加 Agent Router 令牌" },
-      { "type": "steps", "items": ["打开 Agent Router 令牌页面：https://agentrouter.org/console/token。", "登录后创建一个新令牌并复制保存；令牌只显示一次时请立即保存。", "回到 CC Switch，进入令牌/供应商配置，添加刚刚复制的令牌。"] },
-      { "type": "heading", "text": "3. 填写 API 请求地址" },
-      { "type": "paragraph", "text": "如果当前网络可以使用科学上网（VPN），请求地址填写 https://agentrouter.org/v1；如果使用国内网络、没有 VPN，则填写 https://ps.air-outer.com/v1。模型名称按 Agent Router 控制台实际可用模型填写。" },
-      { "type": "code", "language": "配置参考", "code": "API Key: 你的 Agent Router 令牌\n请求地址（VPN）: https://agentrouter.org/v1\n请求地址（国内网络）: https://ps.air-outer.com/v1\n模型: 选择控制台中可用的模型" },
-      { "type": "heading", "text": "4. 打开 GPT 并测试" },
-      { "type": "steps", "items": ["保存 CC Switch 配置后，打开 GPT。", "随便输入一条不含隐私的测试内容。", "GPT 正常回复即表示配置完成，可以开始使用。"] },
-      { "type": "notice", "tone": "success", "title": "配置完成", "text": "先用普通问题验证连通性，再进行正式工作；不要把 API Key、账号密码或敏感业务数据发给他人。" },
-      { "type": "attachments", "items": [
-        { "name": "Agent Router 令牌控制台", "url": "https://agentrouter.org/console/token", "kind": "link", "meta": "创建与管理令牌" },
-        { "name": "CC Switch 官方下载", "url": "https://ccswitch.io/zh/", "kind": "link", "meta": "Windows / Mac" }
-      ] }
-    ]
-  },
+    "lastCheckedAt": "2026-08-26 09:25:50",
     "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.5 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
-  },
-  {
-    "id": "亲测可以",
-    "slug": "亲测可以",
-    "name": "GoRouter",
-    "url": "https://gorouter.app/sign-up?aff=RL72",
-    "category": "亲测可用",
-    "freeQuota": "注册给100刀左右 每天签到10刀",
-    "freeQuotaValue": 100,
-    "signIn": true,
-    "recharge": false,
-    "chargeEntry": "",
-    "inviteCode": "亲测可用 只能用克劳德的模型 比较推销claude-opus-5-thinking模型等  在个人资料中可签到， 最近开放github注册",
-    "authorRecommendation": "推荐",
-    "requiresVpn": true,
-    "purePublic": true,
-    "sortOrder": 99,
-    "heat": 90,
-    "stability": 90,
-    "status": "可使用",
-    "updatedAt": "2026-08-20",
-    "tags": [],
-    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8",
-    "typeIds": [
-      1,
-      2,
-      3,
-      4,
-      7,
-      9
-    ],
-    "types": [
-      {
-        "id": 1,
-        "name": "纯公益",
-        "slug": "pure-public",
-        "color": "#059669"
-      },
-      {
-        "id": 2,
-        "name": "可签到",
-        "slug": "sign-in",
-        "color": "#2563eb"
-      },
-      {
-        "id": 3,
-        "name": "高额度",
-        "slug": "high-quota",
-        "color": "#d97706"
-      },
-      {
-        "id": 4,
-        "name": "稳定优先",
-        "slug": "stable",
-        "color": "#7c3aed"
-      },
-      {
-        "id": 7,
-        "name": "需科学上网",
-        "slug": "vpn",
-        "color": "#4f46e5"
-      },
-      {
-        "id": 9,
-        "name": "国外为主",
-        "slug": "国外为主",
-        "color": "#2ed139"
-      }
-    ],
-    "description": "注册送100刀左右亲测可以，可每天签到",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-18",
-    "reviewNote": "最新开放注册，速注册"
-  },
-  {
-    "id": "anyrouter",
-    "slug": "anyrouter",
-    "name": "AnyRouter",
-    "url": "https://anyrouter.top/register?aff=2VZq",
-    "category": "纯公益",
-    "freeQuota": "注册给100刀左右，每天签到25刀",
-    "freeQuotaValue": 100,
-    "signIn": true,
-    "recharge": false,
-    "chargeEntry": "无",
-    "inviteCode": "AnyRouter啊， 懂得都懂，每日签到送25刀",
-    "authorRecommendation": "推荐",
-    "requiresVpn": true,
-    "purePublic": true,
-    "sortOrder": 90,
-    "heat": 90,
-    "stability": 90,
-    "status": "使用中",
-    "updatedAt": "2026-08-21",
-    "tags": [],
-    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8\ngpt5.6sol\ngpt5.5",
-    "typeIds": [
-      1,
-      2,
-      3,
-      4,
-      7,
-      9
-    ],
-    "types": [
-      {
-        "id": 1,
-        "name": "纯公益",
-        "slug": "pure-public",
-        "color": "#059669"
-      },
-      {
-        "id": 2,
-        "name": "可签到",
-        "slug": "sign-in",
-        "color": "#2563eb"
-      },
-      {
-        "id": 3,
-        "name": "高额度",
-        "slug": "high-quota",
-        "color": "#d97706"
-      },
-      {
-        "id": 4,
-        "name": "稳定优先",
-        "slug": "stable",
-        "color": "#7c3aed"
-      },
-      {
-        "id": 7,
-        "name": "需科学上网",
-        "slug": "vpn",
-        "color": "#4f46e5"
-      },
-      {
-        "id": 9,
-        "name": "国外为主",
-        "slug": "国外为主",
-        "color": "#2ed139"
-      }
-    ],
-    "description": "注册给100刀左右，每天签到25刀",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-17",
-    "reviewNote": "个人资料，没人签到"
-  },
-  {
-    "id": "tabitoken",
-    "slug": "tabitoken",
-    "name": "TaBitoken",
-    "url": "https://tabitoken.com/sign-up?aff=SKI6",
-    "category": "亲测额可以",
-    "freeQuota": "注册给130刀左右 每天签到5-10刀",
-    "freeQuotaValue": 130,
-    "signIn": true,
-    "recharge": false,
-    "chargeEntry": "无",
-    "inviteCode": "",
-    "authorRecommendation": "推荐",
-    "requiresVpn": true,
-    "purePublic": true,
-    "sortOrder": 90,
-    "heat": 90,
-    "stability": 90,
-    "status": "使用中",
-    "updatedAt": "2026-08-20",
-    "tags": [
-      "克劳德模型"
-    ],
-    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8",
-    "typeIds": [
-      1,
-      2,
-      3,
-      7,
-      9
-    ],
-    "types": [
-      {
-        "id": 1,
-        "name": "纯公益",
-        "slug": "pure-public",
-        "color": "#059669"
-      },
-      {
-        "id": 2,
-        "name": "可签到",
-        "slug": "sign-in",
-        "color": "#2563eb"
-      },
-      {
-        "id": 3,
-        "name": "高额度",
-        "slug": "high-quota",
-        "color": "#d97706"
-      },
-      {
-        "id": 7,
-        "name": "需科学上网",
-        "slug": "vpn",
-        "color": "#4f46e5"
-      },
-      {
-        "id": 9,
-        "name": "国外为主",
-        "slug": "国外为主",
-        "color": "#2ed139"
-      }
-    ],
-    "description": "注册给130刀左右 每天签到5-10刀",
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-19",
-    "reviewNote": "github账号注册"
   },
   {
     "id": "justdowork",
@@ -323,14 +88,15 @@
     "recharge": false,
     "chargeEntry": "无",
     "inviteCode": "",
-    "authorRecommendation": "推荐",
+    "authorRecommendation": "强烈推荐",
+    "isPinned": true,
     "requiresVpn": true,
     "purePublic": true,
     "sortOrder": 90,
     "heat": 90,
     "stability": 90,
     "status": "使用中",
-    "updatedAt": "2026-08-20",
+    "updatedAt": "2026-08-26",
     "tags": [
       "克劳德模型"
     ],
@@ -382,9 +148,230 @@
       }
     ],
     "description": "注册给100刀左右 每天签到20-30刀",
+    "tutorial": null,
     "isPublished": true,
-    "lastCheckedAt": "2026-08-19",
+    "lastCheckedAt": "2026-08-26 09:25:52",
     "reviewNote": null
+  },
+  {
+    "id": "亲测可以",
+    "slug": "亲测可以",
+    "name": "GoRouter",
+    "url": "https://gorouter.app/sign-up?aff=RL72",
+    "category": "亲测可用",
+    "freeQuota": "注册给100刀左右 每天签到10刀",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "",
+    "inviteCode": "亲测可用 只能用克劳德的模型 比较推销claude-opus-5-thinking模型等  在个人资料中可签到， 最近开放github注册",
+    "authorRecommendation": "推荐",
+    "isPinned": false,
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 99,
+    "heat": 90,
+    "stability": 90,
+    "status": "可使用",
+    "updatedAt": "2026-08-25",
+    "tags": [],
+    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8",
+    "typeIds": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      9
+    ],
+    "types": [
+      {
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册送100刀左右亲测可以，可每天签到",
+    "tutorial": null,
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-25 16:46:15",
+    "reviewNote": "最新开放注册，速注册"
+  },
+  {
+    "id": "tabitoken",
+    "slug": "tabitoken",
+    "name": "TaBitoken",
+    "url": "https://tabitoken.com/sign-up?aff=SKI6",
+    "category": "亲测额可以",
+    "freeQuota": "注册给130刀左右 每天签到5-10刀",
+    "freeQuotaValue": 130,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "",
+    "authorRecommendation": "推荐",
+    "isPinned": false,
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 90,
+    "heat": 90,
+    "stability": 90,
+    "status": "使用中",
+    "updatedAt": "2026-08-26",
+    "tags": [
+      "克劳德模型"
+    ],
+    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8",
+    "typeIds": [
+      1,
+      2,
+      3,
+      7,
+      9
+    ],
+    "types": [
+      {
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册给130刀左右 每天签到5-10刀",
+    "tutorial": null,
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-26 09:26:07",
+    "reviewNote": "github账号注册"
+  },
+  {
+    "id": "anyrouter",
+    "slug": "anyrouter",
+    "name": "AnyRouter",
+    "url": "https://anyrouter.top/register?aff=2VZq",
+    "category": "纯公益",
+    "freeQuota": "注册给100刀左右，每天签到25刀",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "AnyRouter啊， 懂得都懂，每日签到送25刀",
+    "authorRecommendation": "推荐",
+    "isPinned": false,
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 90,
+    "heat": 90,
+    "stability": 90,
+    "status": "使用中",
+    "updatedAt": "2026-08-26",
+    "tags": [],
+    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8\ngpt5.6sol\ngpt5.5",
+    "typeIds": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      9
+    ],
+    "types": [
+      {
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册给100刀左右，每天签到25刀",
+    "tutorial": null,
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-26 09:25:54",
+    "reviewNote": "个人资料，没人签到"
   },
   {
     "id": "辉哥中转公益站",
@@ -399,13 +386,14 @@
     "chargeEntry": "无",
     "inviteCode": "",
     "authorRecommendation": "推荐",
+    "isPinned": false,
     "requiresVpn": false,
     "purePublic": true,
     "sortOrder": 88,
     "heat": 88,
     "stability": 90,
     "status": "可使用",
-    "updatedAt": "2026-08-21",
+    "updatedAt": "2026-08-26",
     "tags": [],
     "availableModels": "聚合平台 免费的大模型中转站，兼容 OpenAI 接口格式。GPT、Claude、Gemini、DeepSeek、Kimi、GLM、Grok、Qwen 这些都能用",
     "typeIds": [
@@ -441,8 +429,9 @@
       }
     ],
     "description": "注册赠送100次 每天签到50-100 国模优先",
+    "tutorial": null,
     "isPublished": true,
-    "lastCheckedAt": "2026-08-20",
+    "lastCheckedAt": "2026-08-26 09:25:58",
     "reviewNote": "免费的大模型中转站，兼容 OpenAI 接口格式。GPT、Claude、Gemini、DeepSeek、Kimi、GLM、Grok、Qwen 这些都能用。先注册账号进控制台生成密钥，再去客户端里填"
   },
   {
@@ -458,13 +447,14 @@
     "chargeEntry": "",
     "inviteCode": "",
     "authorRecommendation": "推荐",
+    "isPinned": false,
     "requiresVpn": true,
     "purePublic": true,
     "sortOrder": 85,
     "heat": 85,
     "stability": 85,
     "status": "可备用",
-    "updatedAt": "2026-08-20",
+    "updatedAt": "2026-08-25",
     "tags": [],
     "availableModels": "克劳德\nGPT\nGenmini都可使用",
     "typeIds": [
@@ -507,8 +497,9 @@
       }
     ],
     "description": "注册给200刀，签到每天固定20刀",
+    "tutorial": null,
     "isPublished": true,
-    "lastCheckedAt": "2026-08-18",
+    "lastCheckedAt": "2026-08-25 16:46:15",
     "reviewNote": "聚合平台，很多模型都可以使用，纯公益"
   },
   {
@@ -524,13 +515,14 @@
     "chargeEntry": "",
     "inviteCode": "",
     "authorRecommendation": "推荐",
+    "isPinned": false,
     "requiresVpn": false,
     "purePublic": false,
     "sortOrder": 80,
     "heat": 80,
     "stability": 95,
     "status": "可使用",
-    "updatedAt": "2026-08-20",
+    "updatedAt": "2026-08-26",
     "tags": [
       "聚合平台"
     ],
@@ -568,8 +560,9 @@
       }
     ],
     "description": "注册给30-40刀，每天签到5刀左右",
+    "tutorial": null,
     "isPublished": true,
-    "lastCheckedAt": "2026-08-18",
+    "lastCheckedAt": "2026-08-26 09:26:04",
     "reviewNote": "随便邮箱注册，建议先体验"
   },
   {
@@ -585,13 +578,14 @@
     "chargeEntry": "有,建议先体验",
     "inviteCode": "",
     "authorRecommendation": "推荐",
+    "isPinned": false,
     "requiresVpn": false,
     "purePublic": false,
     "sortOrder": 80,
     "heat": 80,
     "stability": 95,
     "status": "小红书热点",
-    "updatedAt": "2026-08-20",
+    "updatedAt": "2026-08-26",
     "tags": [],
     "availableModels": "聚合平台，基本上什么模型都有，注册送额度每天签到额度都可体验体验",
     "typeIds": [
@@ -634,8 +628,9 @@
       }
     ],
     "description": "聚合平台 基本上什么模型都可以用",
+    "tutorial": null,
     "isPublished": true,
-    "lastCheckedAt": "2026-08-19",
+    "lastCheckedAt": "2026-08-26 09:25:59",
     "reviewNote": "普通邮箱注册"
   }
 ]
