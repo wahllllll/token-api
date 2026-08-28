@@ -77,6 +77,71 @@
     "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.5 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
   },
   {
+    "id": "sharezzz-纯公益",
+    "slug": "sharezzz-纯公益",
+    "name": "Sharezzz-纯公益",
+    "url": "https://www.sharezzz.com/register?aff=AGPKPDR86K2Z",
+    "category": "Other",
+    "freeQuota": "注册给1刀-但入QQ群自动送50刀",
+    "freeQuotaValue": 50,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "注册给1刀-但入QQ群自动送50刀",
+    "authorRecommendation": "强烈推荐",
+    "isPinned": true,
+    "requiresVpn": false,
+    "purePublic": true,
+    "sortOrder": 98,
+    "heat": 98,
+    "stability": 98,
+    "status": "可使用",
+    "updatedAt": "2026-08-28",
+    "tags": [
+      "GPT模型"
+    ],
+    "availableModels": "gpt5.6 sol等gpt系列",
+    "typeIds": [
+      3,
+      4,
+      9
+    ],
+    "types": [
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册给1刀-但入QQ群自动送50刀",
+    "tutorial": {
+      "blocks": [
+        {
+          "text": "无",
+          "type": "paragraph"
+        }
+      ],
+      "preface": "无",
+      "summary": "无"
+    },
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-28 22:03:11",
+    "reviewNote": "无"
+  },
+  {
     "id": "justdowork",
     "slug": "justdowork",
     "name": "JustDoWork",
