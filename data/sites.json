@@ -77,6 +77,55 @@
     "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.5 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
   },
   {
+    "id": "kktoken",
+    "slug": "kktoken",
+    "name": "kktoken",
+    "url": "https://kktoken.cc/sign-up?aff=S3M0",
+    "category": "Other",
+    "freeQuota": "注册100刀+每天签到20刀",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "注册100刀+每天签到20刀",
+    "authorRecommendation": "强烈推荐",
+    "isPinned": true,
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 99,
+    "heat": 99,
+    "stability": 99,
+    "status": "使用中",
+    "updatedAt": "2026-08-30",
+    "tags": [
+      "克劳德模型"
+    ],
+    "availableModels": "claude相关模型",
+    "typeIds": [
+      7,
+      9
+    ],
+    "types": [
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册100刀+每天签到20刀",
+    "tutorial": null,
+    "isPublished": true,
+    "lastCheckedAt": "2026-08-30 17:31:00",
+    "reviewNote": "注册100刀+每天签到20刀"
+  },
+  {
     "id": "sharezzz-纯公益",
     "slug": "sharezzz-纯公益",
     "name": "Sharezzz-纯公益",
