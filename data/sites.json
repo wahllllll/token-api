@@ -1,5 +1,43 @@
 [
   {
+    "id": "artiyflow",
+    "slug": "artiyflow",
+    "name": "ArtiyFlow",
+    "url": "https://www.arityflow.top/sign-up?aff=y9BY",
+    "category": "纯公益",
+    "freeQuota": "纯公益可签到",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "",
+    "inviteCode": "",
+    "authorRecommendation": "强烈推荐",
+    "isPinned": true,
+    "requiresVpn": false,
+    "purePublic": true,
+    "sortOrder": 101,
+    "heat": 100,
+    "stability": 0,
+    "status": "观察中",
+    "updatedAt": "2026-10-01",
+    "tags": [],
+    "availableModels": "国内模型基本上都能用",
+    "typeIds": [],
+    "types": [
+      {
+        "id": null,
+        "name": null,
+        "slug": null,
+        "color": null
+      }
+    ],
+    "description": "他们也有通知q群 五群：1109686887@全体成员",
+    "tutorial": null,
+    "isPublished": true,
+    "lastCheckedAt": "2026-10-01 13:43:00",
+    "reviewNote": null
+  },
+  {
     "id": "agent-router",
     "slug": "agent-router",
     "name": "Agent Router",
@@ -19,7 +57,7 @@
     "heat": 100,
     "stability": 90,
     "status": "活动中",
-    "updatedAt": "2026-08-28",
+    "updatedAt": "2026-10-01",
     "tags": [
       "好好学力"
     ],
@@ -73,8 +111,85 @@
     "description": "注册就送175刀+每天签到25刀",
     "tutorial": null,
     "isPublished": true,
-    "lastCheckedAt": "2026-08-28 21:51:58",
+    "lastCheckedAt": "2026-10-01 13:38:30",
     "reviewNote": "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.5 折”的 Core 分组；具体奖励和获取机制尚未确认。\n国内无需代理注册的教程 https://linux.sb/topic/13130"
+  },
+  {
+    "id": "justdowork",
+    "slug": "justdowork",
+    "name": "JustDoWork",
+    "url": "https://api.justwoker.icu/sign-up?aff=7LuO",
+    "category": "亲测可用",
+    "freeQuota": "注册给100刀左右 每天签到20-30刀",
+    "freeQuotaValue": 100,
+    "signIn": true,
+    "recharge": false,
+    "chargeEntry": "无",
+    "inviteCode": "",
+    "authorRecommendation": "强烈推荐",
+    "isPinned": true,
+    "requiresVpn": true,
+    "purePublic": true,
+    "sortOrder": 100,
+    "heat": 90,
+    "stability": 90,
+    "status": "使用中",
+    "updatedAt": "2026-10-01",
+    "tags": [
+      "克劳德模型"
+    ],
+    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8",
+    "typeIds": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      9
+    ],
+    "types": [
+      {
+        "id": 1,
+        "name": "纯公益",
+        "slug": "pure-public",
+        "color": "#059669"
+      },
+      {
+        "id": 2,
+        "name": "可签到",
+        "slug": "sign-in",
+        "color": "#2563eb"
+      },
+      {
+        "id": 3,
+        "name": "高额度",
+        "slug": "high-quota",
+        "color": "#d97706"
+      },
+      {
+        "id": 4,
+        "name": "稳定优先",
+        "slug": "stable",
+        "color": "#7c3aed"
+      },
+      {
+        "id": 7,
+        "name": "需科学上网",
+        "slug": "vpn",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 9,
+        "name": "国外为主",
+        "slug": "国外为主",
+        "color": "#2ed139"
+      }
+    ],
+    "description": "注册给100刀左右 每天签到20-30刀",
+    "tutorial": null,
+    "isPublished": true,
+    "lastCheckedAt": "2026-10-01 13:38:32",
+    "reviewNote": null
   },
   {
     "id": "kktoken",
@@ -189,83 +304,6 @@
     "isPublished": true,
     "lastCheckedAt": "2026-08-28 22:03:11",
     "reviewNote": "无"
-  },
-  {
-    "id": "justdowork",
-    "slug": "justdowork",
-    "name": "JustDoWork",
-    "url": "https://api.justwoker.icu/sign-up?aff=7LuO",
-    "category": "亲测可用",
-    "freeQuota": "注册给100刀左右 每天签到20-30刀",
-    "freeQuotaValue": 100,
-    "signIn": true,
-    "recharge": false,
-    "chargeEntry": "无",
-    "inviteCode": "",
-    "authorRecommendation": "强烈推荐",
-    "isPinned": true,
-    "requiresVpn": true,
-    "purePublic": true,
-    "sortOrder": 90,
-    "heat": 90,
-    "stability": 90,
-    "status": "使用中",
-    "updatedAt": "2026-08-28",
-    "tags": [
-      "克劳德模型"
-    ],
-    "availableModels": "claude-opus-5-thinking\nclaude-opus-5\nclaude-opus-4-8-thinking\nclaude-opus-4-8",
-    "typeIds": [
-      1,
-      2,
-      3,
-      4,
-      7,
-      9
-    ],
-    "types": [
-      {
-        "id": 1,
-        "name": "纯公益",
-        "slug": "pure-public",
-        "color": "#059669"
-      },
-      {
-        "id": 2,
-        "name": "可签到",
-        "slug": "sign-in",
-        "color": "#2563eb"
-      },
-      {
-        "id": 3,
-        "name": "高额度",
-        "slug": "high-quota",
-        "color": "#d97706"
-      },
-      {
-        "id": 4,
-        "name": "稳定优先",
-        "slug": "stable",
-        "color": "#7c3aed"
-      },
-      {
-        "id": 7,
-        "name": "需科学上网",
-        "slug": "vpn",
-        "color": "#4f46e5"
-      },
-      {
-        "id": 9,
-        "name": "国外为主",
-        "slug": "国外为主",
-        "color": "#2ed139"
-      }
-    ],
-    "description": "注册给100刀左右 每天签到20-30刀",
-    "tutorial": null,
-    "isPublished": true,
-    "lastCheckedAt": "2026-08-28 21:52:03",
-    "reviewNote": null
   },
   {
     "id": "亲测可以",
